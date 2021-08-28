@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsListCVCell" customModule="NewsRead" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsListCVCell" id="gTV-IL-0wX" customClass="NewsListCVCell" customModule="NewsRead" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="416"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="416"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xj-Ed-CAh">
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="416"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF0-b3-fik">
+                                <rect key="frame" x="10" y="10" width="263" height="396"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo" translatesAutoresizingMaskIntoConstraints="NO" id="RZB-bO-hVv">
+                                        <rect key="frame" x="5" y="5" width="253" height="138.5"/>
+                                    </imageView>
+                                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-ws-xTv">
+                                        <rect key="frame" x="5" y="5" width="253" height="138.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News headline" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ss-gM-DTs">
+                                        <rect key="frame" x="5" y="153.5" width="253" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6t-ah-rTE">
+                                        <rect key="frame" x="5" y="178" width="253" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published At:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-oR-Qyn">
+                                        <rect key="frame" x="5" y="197" width="253" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLA-V3-qif">
+                                        <rect key="frame" x="5" y="215" width="253" height="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnz-pC-RwM">
+                                        <rect key="frame" x="5" y="234" width="253" height="157"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.31465977429999997" blue="0.59292972089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TTe-ws-xTv" firstAttribute="leading" secondItem="RZB-bO-hVv" secondAttribute="leading" id="1xl-Ee-eao"/>
+                                    <constraint firstItem="Tnz-pC-RwM" firstAttribute="top" secondItem="qLA-V3-qif" secondAttribute="bottom" constant="5" id="3bZ-5U-7HQ"/>
+                                    <constraint firstItem="RZB-bO-hVv" firstAttribute="leading" secondItem="eF0-b3-fik" secondAttribute="leading" constant="5" id="AoK-Qp-tkX"/>
+                                    <constraint firstItem="Arh-oR-Qyn" firstAttribute="top" secondItem="e6t-ah-rTE" secondAttribute="bottom" constant="5" id="B8T-c2-QbN"/>
+                                    <constraint firstItem="RZB-bO-hVv" firstAttribute="height" secondItem="eF0-b3-fik" secondAttribute="height" multiplier="0.35" id="EBG-0B-G73"/>
+                                    <constraint firstItem="Tnz-pC-RwM" firstAttribute="leading" secondItem="qLA-V3-qif" secondAttribute="leading" id="FxS-sn-kYZ"/>
+                                    <constraint firstItem="TTe-ws-xTv" firstAttribute="bottom" secondItem="RZB-bO-hVv" secondAttribute="bottom" id="JBW-IE-b3S"/>
+                                    <constraint firstItem="e6t-ah-rTE" firstAttribute="leading" secondItem="0Ss-gM-DTs" secondAttribute="leading" id="JUi-b1-tmi"/>
+                                    <constraint firstItem="Tnz-pC-RwM" firstAttribute="trailing" secondItem="qLA-V3-qif" secondAttribute="trailing" id="K9g-lX-WcI"/>
+                                    <constraint firstItem="e6t-ah-rTE" firstAttribute="top" secondItem="0Ss-gM-DTs" secondAttribute="bottom" constant="5" id="MsR-XY-ROV"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Ss-gM-DTs" secondAttribute="trailing" constant="5" id="N9Y-Hb-NZF"/>
+                                    <constraint firstAttribute="trailing" secondItem="RZB-bO-hVv" secondAttribute="trailing" constant="5" id="O8e-xZ-56V"/>
+                                    <constraint firstItem="RZB-bO-hVv" firstAttribute="top" secondItem="eF0-b3-fik" secondAttribute="top" constant="5" id="OrG-8q-7Qv"/>
+                                    <constraint firstItem="0Ss-gM-DTs" firstAttribute="top" secondItem="TTe-ws-xTv" secondAttribute="bottom" constant="10" id="R1h-LN-YbK"/>
+                                    <constraint firstItem="TTe-ws-xTv" firstAttribute="top" secondItem="RZB-bO-hVv" secondAttribute="top" id="VJT-VG-Jux"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tnz-pC-RwM" secondAttribute="bottom" constant="5" id="bcK-dl-odP"/>
+                                    <constraint firstItem="qLA-V3-qif" firstAttribute="leading" secondItem="Arh-oR-Qyn" secondAttribute="leading" id="bfH-f9-tSt"/>
+                                    <constraint firstItem="TTe-ws-xTv" firstAttribute="trailing" secondItem="RZB-bO-hVv" secondAttribute="trailing" id="eHA-Lx-TQG"/>
+                                    <constraint firstItem="0Ss-gM-DTs" firstAttribute="leading" secondItem="eF0-b3-fik" secondAttribute="leading" constant="5" id="ebA-rZ-tK5"/>
+                                    <constraint firstItem="qLA-V3-qif" firstAttribute="trailing" secondItem="Arh-oR-Qyn" secondAttribute="trailing" id="frv-s3-dnh"/>
+                                    <constraint firstItem="e6t-ah-rTE" firstAttribute="trailing" secondItem="0Ss-gM-DTs" secondAttribute="trailing" id="gB3-8v-sxP"/>
+                                    <constraint firstItem="Arh-oR-Qyn" firstAttribute="leading" secondItem="e6t-ah-rTE" secondAttribute="leading" id="mvH-ba-sw4"/>
+                                    <constraint firstItem="qLA-V3-qif" firstAttribute="top" secondItem="Arh-oR-Qyn" secondAttribute="bottom" constant="5" id="soe-1x-FQ2"/>
+                                    <constraint firstItem="Arh-oR-Qyn" firstAttribute="trailing" secondItem="e6t-ah-rTE" secondAttribute="trailing" id="vgh-Up-HmQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.31063749361014853" blue="0.59292972089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eF0-b3-fik" firstAttribute="leading" secondItem="4xj-Ed-CAh" secondAttribute="leading" constant="10" id="HWl-sl-1Vc"/>
+                            <constraint firstAttribute="bottom" secondItem="eF0-b3-fik" secondAttribute="bottom" constant="10" id="Mx6-7o-BbE"/>
+                            <constraint firstAttribute="trailing" secondItem="eF0-b3-fik" secondAttribute="trailing" constant="10" id="fLz-aD-nTo"/>
+                            <constraint firstItem="eF0-b3-fik" firstAttribute="top" secondItem="4xj-Ed-CAh" secondAttribute="top" constant="10" id="quF-ex-mCa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4xj-Ed-CAh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vr8-2o-hE1"/>
+                <constraint firstAttribute="trailing" secondItem="4xj-Ed-CAh" secondAttribute="trailing" id="WwM-Ms-Lma"/>
+                <constraint firstItem="4xj-Ed-CAh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eJ0-vK-3A6"/>
+                <constraint firstAttribute="bottom" secondItem="4xj-Ed-CAh" secondAttribute="bottom" id="jlS-EV-Ouf"/>
+            </constraints>
+            <size key="customSize" width="283" height="416"/>
+            <connections>
+                <outlet property="imgView_picture" destination="RZB-bO-hVv" id="ZDv-TK-IUZ"/>
+                <outlet property="lbl_author" destination="e6t-ah-rTE" id="Azd-U6-w0Q"/>
+                <outlet property="lbl_description" destination="Tnz-pC-RwM" id="Mpc-2p-IdH"/>
+                <outlet property="lbl_headline" destination="0Ss-gM-DTs" id="cq2-NB-9hX"/>
+                <outlet property="lbl_publishedAt" destination="Arh-oR-Qyn" id="OBG-US-Ufz"/>
+                <outlet property="lbl_urlToNews" destination="qLA-V3-qif" id="PAi-3u-SDa"/>
+                <outlet property="view_allContent" destination="eF0-b3-fik" id="EyE-V7-BpT"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="214.28571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demo" width="366.66665649414062" height="206.33332824707031"/>
+    </resources>
+</document>

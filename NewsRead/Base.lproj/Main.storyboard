@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="519-3D-mpr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdR-k2-Zf1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsRead" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="NewsRead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,18 +40,83 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btn_logout" destination="tOx-2a-72b" id="82B-nW-OAH"/>
-                        <outlet property="btn_news" destination="iGF-lv-gi9" id="qlY-yX-8Dl"/>
+                        <outlet property="barbtn_logout" destination="tOx-2a-72b" id="oo5-39-Xc9"/>
+                        <outlet property="barbtn_news" destination="iGF-lv-gi9" id="WyB-pE-sGN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--News-->
+        <scene sceneID="6pg-va-4fw">
+            <objects>
+                <viewController id="VWo-1m-plI" customClass="NewsViewController" customModule="NewsRead" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VkN-Cz-MLo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bdj-aN-5G6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7a7-El-bW4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ca9-Xg-aF8">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t1h-29-aWA">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyj-Kj-Ptg" customClass="NewsListCVCell" customModule="NewsRead" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yyj-Kj-Ptg" secondAttribute="trailing" id="SBk-w6-eno"/>
+                                                <constraint firstItem="yyj-Kj-Ptg" firstAttribute="leading" secondItem="t1h-29-aWA" secondAttribute="leading" id="WhL-jt-p3x"/>
+                                                <constraint firstAttribute="bottom" secondItem="yyj-Kj-Ptg" secondAttribute="bottom" id="amq-aj-C6U"/>
+                                                <constraint firstItem="yyj-Kj-Ptg" firstAttribute="top" secondItem="t1h-29-aWA" secondAttribute="top" id="lVy-fx-A42"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="VWo-1m-plI" id="wm2-ZG-C4s"/>
+                                    <outlet property="delegate" destination="VWo-1m-plI" id="gdU-yQ-LQO"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T9h-lc-Kjb"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bdj-aN-5G6" firstAttribute="leading" secondItem="T9h-lc-Kjb" secondAttribute="leading" id="2ue-EA-Tcx"/>
+                            <constraint firstItem="T9h-lc-Kjb" firstAttribute="trailing" secondItem="bdj-aN-5G6" secondAttribute="trailing" id="XUA-Jd-Wbe"/>
+                            <constraint firstItem="bdj-aN-5G6" firstAttribute="top" secondItem="T9h-lc-Kjb" secondAttribute="top" id="dYP-bq-Fh0"/>
+                            <constraint firstItem="T9h-lc-Kjb" firstAttribute="bottom" secondItem="bdj-aN-5G6" secondAttribute="bottom" id="plY-Jr-ueS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="SjP-tm-SoV"/>
+                    <connections>
+                        <outlet property="collectionView_newsList" destination="bdj-aN-5G6" id="wu4-oN-hCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5l-B4-JHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914.49275362318849" y="763.39285714285711"/>
+        </scene>
+        <!--Signup View Controller-->
         <scene sceneID="aug-2i-vfT">
             <objects>
-                <viewController id="519-3D-mpr" sceneMemberID="viewController">
+                <viewController id="519-3D-mpr" customClass="SignupViewController" customModule="NewsRead" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0bd-bj-YXc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9p-n0-jAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="747"/>
+            <point key="canvasLocation" x="1826.0869565217392" y="746.65178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yXV-2E-dcU">
@@ -82,7 +148,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQI-Ug-KN5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.17729471576086167" blue="0.32295203931403882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -96,8 +162,31 @@
             </objects>
             <point key="canvasLocation" x="5.7971014492753632" y="75.669642857142847"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mmg-Uv-k86">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fdR-k2-Zf1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="arrow.backward" catalog="system" id="QPL-w3-4Dd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.31063749361014853" blue="0.59292972089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VWo-1m-plI" kind="relationship" relationship="rootViewController" id="WYo-xX-VAq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onJ-dU-feD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4.3478260869565224" y="763.39285714285711"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
