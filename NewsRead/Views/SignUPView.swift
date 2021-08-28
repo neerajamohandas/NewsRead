@@ -30,7 +30,9 @@ class SignUPView: SuperView {
     
     func setupView(){
         
-        btn_Signup.layer.cornerRadius = 5.0
+        btn_Signup.layer.cornerRadius = 20.0
+        btn_Signup.layer.borderColor = UIColor(named: "color_secondary_light")?.cgColor
+        btn_Signup.layer.borderWidth = 2.0
         
     }
     

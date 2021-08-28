@@ -29,8 +29,8 @@ class HomeView: SuperView {
     
     func setUPView(){
         
-        view_data.layer.shadowColor = UIColor.systemBlue.cgColor
-        view_data.layer.shadowOpacity = 0.3
+        view_data.layer.shadowColor = UIColor(named: "color_primary_dark")?.cgColor
+        view_data.layer.shadowOpacity = 0.9
         view_data.layer.shadowOffset = CGSize.zero
         view_data.layer.shadowRadius = 5.0
         view_data.layer.cornerRadius = 10.0

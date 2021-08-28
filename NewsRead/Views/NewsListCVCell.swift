@@ -20,7 +20,7 @@ class NewsListCVCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        view_allContent.layer.shadowColor = UIColor.white.cgColor
+        view_allContent.layer.shadowColor = UIColor(named: "color_secondary_light")?.cgColor
         view_allContent.layer.shadowOpacity = 0.8
         view_allContent.layer.shadowOffset = CGSize.zero
         view_allContent.layer.shadowRadius = 3.0

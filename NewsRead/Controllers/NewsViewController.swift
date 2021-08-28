@@ -21,7 +21,7 @@ class NewsViewController: UIViewController,UICollectionViewDelegate,UICollection
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: (UIScreen.main.bounds.width), height: (UIScreen.main.bounds.width))
+        layout.itemSize = CGSize(width: (UIScreen.main.bounds.width), height: (UIScreen.main.bounds.height) * 0.7)
         layout.minimumInteritemSpacing = 5
        // layout.minimumLineSpacing = 10
         collectionView_newsList.collectionViewLayout = layout

@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		1856B0DE26D76A16007C2583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0DD26D76A16007C2583 /* AppDelegate.swift */; };
 		1856B0E026D76A16007C2583 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0DF26D76A16007C2583 /* SceneDelegate.swift */; };
-		1856B0E226D76A16007C2583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0E126D76A16007C2583 /* ViewController.swift */; };
 		1856B0E526D76A16007C2583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856B0E326D76A16007C2583 /* Main.storyboard */; };
 		1856B0E726D76A19007C2583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1856B0E626D76A19007C2583 /* Assets.xcassets */; };
 		1856B0EA26D76A19007C2583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1856B0E826D76A19007C2583 /* LaunchScreen.storyboard */; };
 		1856B0F726D77A2A007C2583 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0F626D77A2A007C2583 /* News.swift */; };
 		1856B0FB26D7814D007C2583 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856B0FA26D7814D007C2583 /* HomeView.swift */; };
 		1856B0FE26D78165007C2583 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856B0FD26D78165007C2583 /* HomeView.xib */; };
+		18A813CF26DA59A1005C2F09 /* NewsListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A813CD26DA59A1005C2F09 /* NewsListCVCell.swift */; };
+		18A813D026DA59A1005C2F09 /* NewsListCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A813CE26DA59A1005C2F09 /* NewsListCVCell.xib */; };
+		18A813D426DA647B005C2F09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A813D326DA647B005C2F09 /* HomeViewController.swift */; };
+		18A813D726DA64AE005C2F09 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A813D626DA64AE005C2F09 /* SignupViewController.swift */; };
+		18A813DA26DA64CD005C2F09 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A813D926DA64CD005C2F09 /* NewsViewController.swift */; };
 		18B26DAD26D8E61A0054D02E /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26DAC26D8E61A0054D02E /* SuperView.swift */; };
 		18B26DB126D8E9A20054D02E /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26DB026D8E9A20054D02E /* SignUPView.swift */; };
 		18B26DB426D8E9AF0054D02E /* SignUPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B26DB326D8E9AF0054D02E /* SignUPView.xib */; };
@@ -28,7 +32,6 @@
 		1856B0DA26D76A16007C2583 /* NewsRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1856B0DD26D76A16007C2583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1856B0DF26D76A16007C2583 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1856B0E126D76A16007C2583 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1856B0E426D76A16007C2583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1856B0E626D76A19007C2583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1856B0E926D76A19007C2583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		1856B0F626D77A2A007C2583 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		1856B0FA26D7814D007C2583 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1856B0FD26D78165007C2583 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		18A813CD26DA59A1005C2F09 /* NewsListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCVCell.swift; sourceTree = "<group>"; };
+		18A813CE26DA59A1005C2F09 /* NewsListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListCVCell.xib; sourceTree = "<group>"; };
+		18A813D326DA647B005C2F09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18A813D626DA64AE005C2F09 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		18A813D926DA64CD005C2F09 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		18B26DAC26D8E61A0054D02E /* SuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperView.swift; sourceTree = "<group>"; };
 		18B26DB026D8E9A20054D02E /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
 		18B26DB326D8E9AF0054D02E /* SignUPView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUPView.xib; sourceTree = "<group>"; };
@@ -81,9 +89,9 @@
 			children = (
 				1856B0F526D779DE007C2583 /* Model */,
 				1856B0F926D77A35007C2583 /* Views */,
+				18A813D226DA6408005C2F09 /* Controllers */,
 				1856B0DD26D76A16007C2583 /* AppDelegate.swift */,
 				1856B0DF26D76A16007C2583 /* SceneDelegate.swift */,
-				1856B0E126D76A16007C2583 /* ViewController.swift */,
 				1856B0E326D76A16007C2583 /* Main.storyboard */,
 				1856B0E626D76A19007C2583 /* Assets.xcassets */,
 				1856B0E826D76A19007C2583 /* LaunchScreen.storyboard */,
@@ -110,8 +118,20 @@
 				18B26DB326D8E9AF0054D02E /* SignUPView.xib */,
 				18B26DB626D92DB30054D02E /* MDTextFieldView.xib */,
 				18B26DB926D92DD70054D02E /* MDTextFieldView.swift */,
+				18A813CD26DA59A1005C2F09 /* NewsListCVCell.swift */,
+				18A813CE26DA59A1005C2F09 /* NewsListCVCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		18A813D226DA6408005C2F09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A813D326DA647B005C2F09 /* HomeViewController.swift */,
+				18A813D626DA64AE005C2F09 /* SignupViewController.swift */,
+				18A813D926DA64CD005C2F09 /* NewsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C275B637D0C73EBCF2B54FBF /* Pods */ = {
@@ -195,6 +215,7 @@
 				1856B0E726D76A19007C2583 /* Assets.xcassets in Resources */,
 				18B26DB426D8E9AF0054D02E /* SignUPView.xib in Resources */,
 				1856B0E526D76A16007C2583 /* Main.storyboard in Resources */,
+				18A813D026DA59A1005C2F09 /* NewsListCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,10 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1856B0E226D76A16007C2583 /* ViewController.swift in Sources */,
 				1856B0DE26D76A16007C2583 /* AppDelegate.swift in Sources */,
+				18A813D726DA64AE005C2F09 /* SignupViewController.swift in Sources */,
+				18A813DA26DA64CD005C2F09 /* NewsViewController.swift in Sources */,
 				18B26DAD26D8E61A0054D02E /* SuperView.swift in Sources */,
 				1856B0F726D77A2A007C2583 /* News.swift in Sources */,
+				18A813CF26DA59A1005C2F09 /* NewsListCVCell.swift in Sources */,
+				18A813D426DA647B005C2F09 /* HomeViewController.swift in Sources */,
 				1856B0FB26D7814D007C2583 /* HomeView.swift in Sources */,
 				18B26DBA26D92DD70054D02E /* MDTextFieldView.swift in Sources */,
 				18B26DB126D8E9A20054D02E /* SignUPView.swift in Sources */,
