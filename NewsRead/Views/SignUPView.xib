@@ -8,7 +8,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUPView" customModule="NewsRead" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUPView" customModule="NewsRead" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_Signup" destination="wvW-o3-MGb" id="1KK-BZ-IV6"/>
+                <outlet property="mdtxtf_confirmPassword" destination="85c-du-5Kl" id="Iy7-bA-DEA"/>
+                <outlet property="mdtxtf_dob" destination="W8w-Vh-oCt" id="3e6-Aq-O4S"/>
+                <outlet property="mdtxtf_email" destination="ysJ-eg-lP5" id="xMN-G3-sUM"/>
+                <outlet property="mdtxtf_fullName" destination="bdS-zM-YGV" id="1DS-a9-m3r"/>
+                <outlet property="mdtxtf_mobno" destination="zgq-hh-Uqa" id="7Us-T9-QIb"/>
+                <outlet property="mdtxtf_password" destination="e3F-vK-1qN" id="bNI-fo-ZBs"/>
+                <outlet property="mdtxtf_username" destination="psm-Zh-ZmO" id="4ai-fc-igb"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -17,19 +28,21 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-oo-Awu">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JI-zO-69L">
-                            <rect key="frame" x="20" y="95.5" width="374" height="33.5"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                            <color key="textColor" systemColor="systemGray6Color"/>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS READ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JI-zO-69L">
+                            <rect key="frame" x="20" y="96" width="374" height="32.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
+                            <color key="shadowColor" systemColor="systemGray3Color"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Zf-0bQ">
-                            <rect key="frame" x="30" y="209" width="354" height="537.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Zf-0bQ">
+                            <rect key="frame" x="40" y="178.5" width="334" height="448"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-zM-YGV" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="63.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="59.5"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="3"/>
@@ -38,13 +51,13 @@
                                             <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                            <color key="value" systemColor="systemTealColor"/>
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                            <real key="value" value="1"/>
+                                            <real key="value" value="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                            <size key="value" width="2" height="2"/>
+                                            <size key="value" width="0.0" height="0.0"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
                                             <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,18 +65,18 @@
                                         <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
                                             <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Full Name"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Full name"/>
                                         <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
-                                            <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="value" systemColor="systemGray4Color"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
                                             <integer key="value" value="20"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
-                                            <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="value" systemColor="systemGray6Color"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
-                                            <color key="value" systemColor="systemGray6Color"/>
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                             <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,41 +84,248 @@
                                         <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="person.fill" catalog="system"/>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psm-Zh-ZmO">
-                                    <rect key="frame" x="0.0" y="78.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psm-Zh-ZmO" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="64.5" width="334" height="59.5"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="person.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Username"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-eg-lP5">
-                                    <rect key="frame" x="0.0" y="157.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-eg-lP5" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="129" width="334" height="60"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Email"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="mail.fill" catalog="system"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-Vh-oCt">
-                                    <rect key="frame" x="0.0" y="236.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-Vh-oCt" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="194" width="334" height="59.5"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Date of birth"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="calendar" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgq-hh-Uqa">
-                                    <rect key="frame" x="0.0" y="315.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgq-hh-Uqa" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="258.5" width="334" height="60"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="phone.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Mobile number"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3F-vK-1qN">
-                                    <rect key="frame" x="0.0" y="394.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3F-vK-1qN" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="323.5" width="334" height="59.5"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="eye" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Password"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85c-du-5Kl">
-                                    <rect key="frame" x="0.0" y="473.5" width="354" height="64"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85c-du-5Kl" customClass="MDTextFieldView" customModule="NewsRead" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="388" width="334" height="60"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemGray6Color"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                            <size key="value" width="0.0" height="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientDarkColor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="gradientLightolor">
+                                            <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="eye.slash.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Confirm password"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="PlaceholderColor">
+                                            <color key="value" systemColor="systemGray4Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TextColor">
+                                            <color key="value" systemColor="systemGray6Color"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="TitleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
                         </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvW-o3-MGb">
+                            <rect key="frame" x="70" y="696.5" width="274" height="53.5"/>
+                            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
+                            <state key="normal" title="SIGNUP">
+                                <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btn_Signup_Clicked:" destination="-1" eventType="touchUpInside" id="6lk-CW-btt"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="wvW-o3-MGb" firstAttribute="leading" secondItem="eeE-oo-Awu" secondAttribute="leading" constant="70" id="0Yf-LZ-xdR"/>
+                        <constraint firstAttribute="trailing" secondItem="wvW-o3-MGb" secondAttribute="trailing" constant="70" id="5Qe-r8-EDU"/>
                         <constraint firstAttribute="trailing" secondItem="3JI-zO-69L" secondAttribute="trailing" constant="20" id="9WT-YX-e6M"/>
-                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="top" secondItem="3JI-zO-69L" secondAttribute="bottom" constant="80" id="HBM-mJ-TsP"/>
-                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="leading" secondItem="eeE-oo-Awu" secondAttribute="leading" constant="30" id="Npa-6O-Nbh"/>
+                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="top" secondItem="3JI-zO-69L" secondAttribute="bottom" constant="50" id="HBM-mJ-TsP"/>
+                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="leading" secondItem="eeE-oo-Awu" secondAttribute="leading" constant="40" id="Npa-6O-Nbh"/>
+                        <constraint firstItem="wvW-o3-MGb" firstAttribute="height" secondItem="eeE-oo-Awu" secondAttribute="height" multiplier="0.06" id="OAB-Mb-anb"/>
                         <constraint firstItem="3JI-zO-69L" firstAttribute="leading" secondItem="eeE-oo-Awu" secondAttribute="leading" constant="20" id="XEE-Qt-vvr"/>
-                        <constraint firstAttribute="trailing" secondItem="MwA-Zf-0bQ" secondAttribute="trailing" constant="30" id="kGd-Sc-T01"/>
-                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="height" secondItem="eeE-oo-Awu" secondAttribute="height" multiplier="0.6" id="lOu-zO-tum"/>
+                        <constraint firstItem="wvW-o3-MGb" firstAttribute="top" secondItem="MwA-Zf-0bQ" secondAttribute="bottom" constant="70" id="e7Q-g0-vEU"/>
+                        <constraint firstAttribute="trailing" secondItem="MwA-Zf-0bQ" secondAttribute="trailing" constant="40" id="kGd-Sc-T01"/>
+                        <constraint firstItem="MwA-Zf-0bQ" firstAttribute="height" secondItem="eeE-oo-Awu" secondAttribute="height" multiplier="0.5" id="lOu-zO-tum"/>
                         <constraint firstItem="3JI-zO-69L" firstAttribute="centerY" secondItem="eeE-oo-Awu" secondAttribute="centerY" multiplier="0.25" id="qPc-E0-8MN"/>
                     </constraints>
                 </view>
@@ -122,15 +342,23 @@
         </view>
     </objects>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="eye.slash.fill" catalog="system" width="128" height="82"/>
+        <image name="mail.fill" catalog="system" width="128" height="93"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
